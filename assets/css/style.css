@@ -1,0 +1,32 @@
+h1 {
+    color: purple;
+    font-size: 75px;
+    padding-top: 80px;
+    padding-left: 25%;
+}
+
+button {
+    padding-left: 10%;
+}
+
+#questionsContainer {
+    color: blue;
+    font-style: bold;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#timesUpMessage {
+    padding-top: 50px;
+}
