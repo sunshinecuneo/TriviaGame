@@ -2,8 +2,8 @@
 $(document).ready(function() {
 
     // this object holds all of the questions, answers and the index of the correct answer for each question
-    var game = {
-        questions: [
+    var game = 
+        [
             {
                 question: "What is the capital of Denver?",
                 choices: ["Golden", "Aurora", "Denver", "Colorado Springs"],
@@ -31,22 +31,24 @@ $(document).ready(function() {
                 answer: 1,
             }
         ]
-    }
-
+    
+    var time;
+    $(".wrapper").hide
     // This initializes the start button to start the game
     $("startGame").on("click", function () {
 
         // When the start button is clicked the div with the questions that was hidden is shown
         $(".wrapper").show();
         console.log("Hello");
-
-        $(this).hide();
+        // This events start the timer and sets the amount of time the user has to play the game
+        time = 30;
+         run();
+       // $(this).hide();
 
     });
 
-    // These events start the timer and sets the amount of time the user has to play the game
-    var time = 30;
-    $("#timeLeft").on("click", run);
+    
+    
 
     // This function enables the number of seconds to decrease by one and displays it to the page until time is up
     function decrement() {
@@ -67,6 +69,7 @@ $(document).ready(function() {
     // The run function sets each decrement equal to a second 
     function run() {
         counter = setInterval(decrement, 1000);
+        $("#timeLeft").text(counter)
     }
 
     // The stop function
@@ -143,12 +146,13 @@ $(document).ready(function() {
                 anyAnswered = true;
             }
         }
+        return anyAnswered;
     // 
     }
 
     // Return the anyAnswered variable to distinguish between incorrect answers
     // and unanswered questions
-    return anyAnswered;
+    
 
     // Create a click function event for the doneButton that checks the answers
     // and stops the clock when the done button is clicked
@@ -162,8 +166,9 @@ $(document).ready(function() {
 
 // **********NEEDS FIXING**********
     // Need to define anyAnswered*******
-    // Done button is not functioning
+    // StartAND Done button is not functioning
     // Timer starts as soon as the page loads - not when the start button is clicked
+    // My questions are not hidden when the page is first loaded
 
 
 
@@ -177,3 +182,16 @@ $(document).ready(function() {
     // < input type = "radio" id = "myRadio" ></input>
 
 
+//============
+// 1. you have an array game of json objects Line 5- Line33
+// 2. Start click event
+//  -  You start the timer
+// - you display the One question  and options
+//3. When the user selects an option
+//    - Check for the answer
+//        - Right (Increse score)
+//        - Wrong (display it is wrong)
+//        -- Check whether it is end of the question
+//             -- if not go to next question
+//             -- if it  is last question, display the result (along with time taken) and reset the timer
+//

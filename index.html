@@ -9,14 +9,8 @@
     <!-- Bootstrap links -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
     <!-- My css styling -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 
     <title>Tiffany's Trivial Trivia!</title>
 </head>
@@ -42,42 +36,43 @@
     <!-- div to hold the countdown timer -->
     <div class="timer" id="timeLeft"></div>
 
-    <!-- div to hold all the questions -->
+    <!-- div to hold all the questions and answers-->
     <div class="form" id="questionsContainer">
         <p> 1. What is the capital of Colorado?</p>
         <form class="question">
-            <label class="radio-inline"></label>
-            <label class="radio-inline"></label>
-            <label class="radio-inline"></label>
-            <label class="radio-inline"></label>
+            <input type="radio" name="coloradoCapital" value="Golden"/> Golden
+            <input type="radio" name="coloradoCapital" value="Aurora"/> Aurora
+            <input type="radio" name="coloradoCapital" value="Denver"/> Denver
+            <input type="radio" name="coloradoCapital" value="Colorado Springs"/> Colorado Springs
         </form>
         <p> 2. What is top selling item at Walmart?</p>
         <form class="question">
-            <label class="radio-inline"></label>
-            <label class="radio-inline"></label>
-            <label class="radio-inline"></label>
-            <label class="radio-inline"></label>
+            <input type="radio" name="walmart" value="Gum" /> Gum
+            <input type="radio" name="walmart" value="Candy"/> Candy
+            <input type="radio" name="walmart" value="Toilet Paper"/> Toilet Paper
+            <input type="radio" name="walmart" value="Bananas"/> Bananas
         </form>
         <p> 3. Which NFL team won Super Bowl 50 in 2015?</p>
         <form class="question">
-            <label class="radio-inline"></label>
-            <label class="radio-inline"></label>
-            <label class="radio-inline"></label>
-            <label class="radio-inline"></label>
+            <input type="radio" name="superBowl" value="New England Patriots"/> New England Patriots
+            <input type="radio" name="superBowl" value="DenverBroncos/> Denver Broncos
+            <input type="radio" name="superBowl" value="Miami Dolphins/> Miami Dolphins
+            <input type="radio" name="superBowl" value="Seattle Seahawks"/> Seattle Seahawks
+
         </form>
         <p> 4. Which element is most common in the human body?</p>
         <form class="question">
-            <label class="radio-inline"></label>
-            <label class="radio-inline"></label>
-            <label class="radio-inline"></label>
-            <label class="radio-inline"></label>
+            <input type="radio" name="humanElement" value="Carbon"/> Carbon
+            <input type="radio" name="humanElement" value="Hydrogen"/> Hydrogen
+            <input type="radio" name="humanElement" value="H20"/> H20
+            <input type="radio" name="humanElement" value="Oxygen"/> Oxygen
         </form>
         <p> 5. Who was the 16th president of the United States?</p>
         <form class="question">
-            <label class="radio-inline"></label>
-            <label class="radio-inline"></label>
-            <label class="radio-inline"></label>
-            <label class="radio-inline"></label>
+            <input type="radio" name="president" value="Abe Lincoln"/> Abe Lincoln
+            <input type="radio" name="president" value="George Washington"/> George Washington
+            <input type="radio" name="president" value="Thomas Jefferson"/> Thomas Jefferson
+            <input type="radio" name="president" value="Andrew Johnson"/> Andrew Johnson
         </form>
     </div>
 
@@ -90,12 +85,9 @@
     <!-- div to display the results of the game -->
     <div class="results"></div>
 
-
-
-
     <!-- linking to jquery and the local js file -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type='text/javascript' src='assets/javascript/app.js'></script>
+    <script type='text/javascript' src='Desktop/aPPs.js'></script>
 
 </body>
 
