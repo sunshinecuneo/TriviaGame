@@ -99,9 +99,7 @@ $(document).ready(function() {
     for (var i = 0; i < choices.length; i++) {
         var choice = choices[i];
         console.log(choice);
-        // *******Does my radio button go here??*******
-        // < input type = "radio" id = "myRadio" ></input>
-
+        
     }
     }
 

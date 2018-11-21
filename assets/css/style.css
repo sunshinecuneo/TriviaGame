@@ -1,3 +1,6 @@
+body {
+    background-image: url(memphis-colorful.png)
+}
 h1 {
     color: purple;
     font-size: 75px;
@@ -14,6 +17,8 @@ button {
     font-style: bold;
     font-size: 20px;
 }
+
+
 
 
 
