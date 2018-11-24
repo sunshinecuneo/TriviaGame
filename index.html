@@ -34,60 +34,65 @@
 
     <!-- div to hold the countdown timer -->
     <div class="timer" id="timeLeft"></div>
-    <div class = "container" id ="gamecontent">
-    <!-- div to hold all the questions and answers-->
-    <div class="message" id="Message"></div>
-    <div class="form" id="questionsContainer">
-        <p> 1. What is the capital of Colorado?</p>
-        <form class="question">
-            <input type="radio" name="0" value="Golden"/> Golden
-            <input type="radio" name="0" value="Aurora"/> Aurora
-            <input type="radio" name="0" value="Denver"/> Denver
-            <input type="radio" name="0" value="Colorado Springs"/> Colorado Springs
-        </form>
-        <p> 2. What is top selling item at Walmart?</p>
-        <form class="question">
-            <input type="radio" name="1" value="Gum" /> Gum
-            <input type="radio" name="1" value="Candy"/> Candy
-            <input type="radio" name="1" value="Toilet Paper"/> Toilet Paper
-            <input type="radio" name="1" value="Bananas"/> Bananas
-        </form>
-        <p> 3. Which NFL team won Super Bowl 50 in 2015?</p>
-        <form class="question">
-            <input type="radio" name="2" value="New England Patriots"/> New England Patriots
-            <input type="radio" name="2" value="DenverBroncos"/> Denver Broncos
-            <input type="radio" name="2" value="Miami Dolphins"/> Miami Dolphins
-            <input type="radio" name="2" value="Seattle Seahawks"/> Seattle Seahawks
+    <div class="container" id="gamecontent">
+        <!-- div to hold all the questions and answers-->
+        <div class="message" id="Message"></div>
+        <div class="form" id="questionsContainer">
+            <div class="Question Odd">
+                <p> 1. What is the capital of Colorado?</p>
+                <form class="question">
+                    <input type="radio" name="0" value="Golden" /> Golden
+                    <input type="radio" name="0" value="Aurora" /> Aurora
+                    <input type="radio" name="0" value="Denver" /> Denver
+                    <input type="radio" name="0" value="Colorado Springs" /> Colorado Springs
+                </form>
+            </div>
+            <div class="Question Even">
+                <p> 2. What is top selling item at Walmart?</p>
+                <form class="question">
+                    <input type="radio" name="1" value="Gum" /> Gum
+                    <input type="radio" name="1" value="Candy" /> Candy
+                    <input type="radio" name="1" value="Toilet Paper" /> Toilet Paper
+                    <input type="radio" name="1" value="Bananas" /> Bananas
+                </form>
+            </div>
+            <div class="Question Odd">
+                <p> 3. Which NFL team won Super Bowl 50 in 2015?</p>
+                <form class="question">
+                    <input type="radio" name="2" value="New England Patriots" /> New England Patriots
+                    <input type="radio" name="2" value="Denver Broncos" /> Denver Broncos
+                    <input type="radio" name="2" value="Miami Dolphins" /> Miami Dolphins
+                    <input type="radio" name="2" value="Seattle Seahawks" /> Seattle Seahawks
 
-        </form>
-        <p> 4. Which element is most common in the human body?</p>
-        <form class="question">
-            <input type="radio" name="3" value="Carbon"/> Carbon
-            <input type="radio" name="3" value="Hydrogen"/> Hydrogen
-            <input type="radio" name="3" value="H20"/> H20
-            <input type="radio" name="3" value="Oxygen"/> Oxygen
-        </form>
-        <p> 5. Who was the 16th president of the United States?</p>
-        <form class="question">
-            <input type="radio" name="4" value="Abe Lincoln"/> Abe Lincoln
-            <input type="radio" name="4" value="George Washington"/> George Washington
-            <input type="radio" name="4" value="Thomas Jefferson"/> Thomas Jefferson
-            <input type="radio" name="4" value="Andrew Johnson"/> Andrew Johnson
-        </form>
-     </div>
+                </form>
+            </div>
+            <div class="Question Even">
+                <p> 4. Which element is most common in the human body?</p>
+                <form class="question">
+                    <input type="radio" name="3" value="Carbon" /> Carbon
+                    <input type="radio" name="3" value="Hydrogen" /> Hydrogen
+                    <input type="radio" name="3" value="H20" /> H20
+                    <input type="radio" name="3" value="Oxygen" /> Oxygen
+                </form>
+            </div>
+            <div class="Question Odd">
+                <p> 5. Who was the 16th president of the United States?</p>
+                <form class="question">
+                    <input type="radio" name="4" value="Abe Lincoln" /> Abe Lincoln
+                    <input type="radio" name="4" value="George Washington" /> George Washington
+                    <input type="radio" name="4" value="Thomas Jefferson" /> Thomas Jefferson
+                    <input type="radio" name="4" value="Andrew Johnson" /> Andrew Johnson
+                </form>
+            </div>
+        </div>
     </div>
-    <!-- button to end game if player finishes the game before time is up -->
-    <!-- <button id="doneButton">Done!</button> -->
-
-    <!-- message to be displayed when time is up -->
-  
 
     <!-- div to display the results of the game -->
     <div class="results"></div>
 
     <!-- linking to jquery and the local js file -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type='text/javascript' src='assets/javascript/aPPs.js'></script>
+    <script type='text/javascript' src='assets/javascript/app.js'></script>
 
 </body>
 
